@@ -18,7 +18,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- a place for all of your regular css stuff -->
+    
     <style>
+      
     .headbit {
         background-color: #A9E2F3;
     }
@@ -38,6 +40,20 @@
     .btn {
         background-color: goldenrod;
     }
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        background-color: #A9BCF5;
+    }
+    .navbar-nav li a:hover {
+        color: #1abc9c !important;
+    }
+    
     </style>
 
   </head>
@@ -47,6 +63,25 @@
 
     <!-- bootstrapName customName textAlign -->
 
+    <nav class="navbar navbar-default">
+      <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+	  </button>
+	  <a class="navbar-brand" href="#">Birds</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://en.wikipedia.org/wiki/Bird">WHO</a></li>
+            <li><a href="https://www.allaboutbirds.org/">WHAT</a></li>
+            <li><a href="https://www.google.com/maps?safe=strict&espv=2&q=directions+to+zoo&bav=on.2,or.r_cp.&biw=1440&bih=712&dpr=1&ion=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi1wZ_lkL3QAhVjImMKHZNwA4MQ_AUIBigB">WHERE</a></li>
+	  </ul>
+	</div>
+      </div>
+    </nav>
     
     <div class="container-fluid headbit text-center">
 
