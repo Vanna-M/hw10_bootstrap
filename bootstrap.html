@@ -4,23 +4,22 @@
 <html lang="en">
 
 
-  <head>
+<head>
 
     <title>bootstrap</title>
     <!-- use utf-8 chars -->
     <meta charset="utf-8">
     <!-- look pretty on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- main bootstrap -->
+    <!-- links to bootstrap stuff -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- 2 bootstrap things we're using -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- a place for all of your regular css stuff -->
-    
+
     <style>
-      
+
     .headbit {
         background-color: #A9E2F3;
     }
@@ -33,6 +32,8 @@
     body {
         background-color: #CECEF6;
     }
+
+    /* bootstrap stuff that we're just modifying */
     .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -53,97 +54,99 @@
     .navbar-nav li a:hover {
         color: #1abc9c !important;
     }
-    
+
     </style>
 
-  </head>
+</head>
 
 
-  <body>
+<body>
 
-    <!-- bootstrapName customName textAlign -->
-
+    <!-- class names are a combo of all important stuff -->
+    <!-- so this has properties for navbar and navbar-default -->
     <nav class="navbar navbar-default">
-      <div class="container">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-	  </button>
-	  <a class="navbar-brand" href="#">Birds</a>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-	  <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://en.wikipedia.org/wiki/Bird">WHO</a></li>
-            <li><a href="https://www.allaboutbirds.org/">WHAT</a></li>
-            <li><a href="https://www.google.com/maps?safe=strict&espv=2&q=directions+to+zoo&bav=on.2,or.r_cp.&biw=1440&bih=712&dpr=1&ion=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi1wZ_lkL3QAhVjImMKHZNwA4MQ_AUIBigB">WHERE</a></li>
-	  </ul>
-	</div>
-      </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Birds</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://en.wikipedia.org/wiki/Bird">WHO</a></li>
+                    <li><a href="https://www.allaboutbirds.org/">WHAT</a></li>
+                    <li><a href="https://www.google.com/maps?safe=strict&espv=2&q=directions+to+zoo&bav=on.2,or.r_cp.&biw=1440&bih=712&dpr=1&ion=1&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi1wZ_lkL3QAhVjImMKHZNwA4MQ_AUIBigB">WHERE</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    
+
+    <!-- boostrapclass personalclass bootstrap "class" -->
     <div class="container-fluid headbit text-center">
 
-      <h1>Hello I am a bird apparently</h1>
-      <img src="birds/bird.jpg" class="img-circle" alt="Bird">
-      <br><br>
-      
+        <h1>Hello I am a bird apparently</h1>
+        <img src="birds/bird.jpg" class="img-circle" alt="Bird">
+        <br><br>
+
     </div>
-    
-    
+
+
     <div class = "container-fluid middler text-center">
+        <!-- grid stuff -->
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="birds/bird1.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
 
-      <div class="row">
-	<div class="col-sm-4">
-	  <img src="birds/bird1.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-	
-     	<div class="col-sm-4">
-	  <img src="birds/bird2.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-	
-	<div class="col-sm-4">
-	  <img src="birds/bird3.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-      </div>
+            <div class="col-sm-4">
+                <img src="birds/bird2.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
 
-      <br><br>
+            <div class="col-sm-4">
+                <img src="birds/bird3.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
+        </div>
 
-      <div class="row">
-	<div class="col-sm-4">
-	  <img src="birds/bird4.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-	
-     	<div class="col-sm-4">
-	  <img src="birds/bird5.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-	
-	<div class="col-sm-4">
-	  <img src="birds/bird6.jpg" class="img-rounded img-responsive" alt="Bird">
-	</div>
-      </div>
-      
+        <br><br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="birds/bird4.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
+
+            <div class="col-sm-4">
+                <img src="birds/bird5.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
+
+            <div class="col-sm-4">
+                <img src="birds/bird6.jpg" class="img-rounded img-responsive" alt="Bird">
+            </div>
+        </div>
+
     </div>
-    
+
 
     <div class = "container-fluid bottom">
 
-      <h2>Sources</h2>
-      <ul>
-	<li><a href="http://www.w3schools.com/bootstrap/bootstrap_theme_me.asp" class="btn btn-default btn-sm">
-	    w3 FOOLS!!!
-	</a></li>
-	<li><a href="http://t13.deviantart.net/bVoj2kTM5GA63s3EznlqqhU5qAc=/300x200/filters:fixed_height(100,100):origin()/pre08/06af/th/pre/i/2011/094/1/2/a_cool_bird_by_downloadlink-d3d8ci9.jpg" class="btn btn-default btn-sm">
-	    top bird pic
-	</a></li>
+        <h2>Sources</h2>
+        <ul>
+            <!-- pretty bootstrap buttons -->
+            <li><a href="http://www.w3schools.com/bootstrap/bootstrap_theme_me.asp" class="btn btn-default btn-sm">
+                w3 FOOLS!!!
+            </a></li>
+            <li><a href="http://t13.deviantart.net/bVoj2kTM5GA63s3EznlqqhU5qAc=/300x200/filters:fixed_height(100,100):origin()/pre08/06af/th/pre/i/2011/094/1/2/a_cool_bird_by_downloadlink-d3d8ci9.jpg" class="btn btn-default btn-sm">
+                top bird pic
+            </a></li>
 
-      </ul>
-      
+        </ul>
+
     </div>
-    
 
-  </body>
+
+</body>
 
 
 </html>
